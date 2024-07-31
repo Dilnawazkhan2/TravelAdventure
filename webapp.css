@@ -83,7 +83,9 @@ nav{
     padding: 0 4rem;
     background: linear-gradient(rgb(225,255,225,.2),rgb(225,255,225,.2));
 }
-
+.menu{
+    display: none;
+}
 .menu ul{
     
     display: flex;
@@ -198,7 +200,7 @@ nav{
 .home .content .search{
     transform: translate(0,100px);
     opacity: 0;
-    
+    z-index: -1;
 }
 .traveldetails{
     text-align: center;
@@ -594,6 +596,9 @@ transform: translate(-200px);
         display: flex;
         justify-content: center;
     }
+    .menu{
+        display: none;
+    }
     nav .menu.active{
 
         display: block;
@@ -602,11 +607,10 @@ transform: translate(-200px);
         top: -1.5rem;
         width: 100vw;
         height: 100vh;
-        background: rgb(0 0 0/100%); 
-        display: flex; 
+        background: rgb(0 0 0/90%); 
+        
         align-items: center;
         padding: 0 3rem;
-        
               
 
     }
@@ -614,7 +618,7 @@ transform: translate(-200px);
         display: block;
         position: absolute;
         left: 3rem;
-        top: 5rem;
+        top: 4rem;
         
     }
     nav .close i{
@@ -622,13 +626,18 @@ transform: translate(-200px);
         cursor: pointer;
     }
     nav .menu ul {
-        flex-direction: column;   
-        gap: 1rem;
+         
+         margin: 4rem 3rem 0rem 5rem;
+
+       
+    }
+    nav .menu ul li{
+        margin-left: 3rem;
         
     }
     nav .menu ul li a{
         
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     nav .menu ul:hover{
         color: rgb(225 225 225/40% green, blue);
@@ -645,7 +654,6 @@ transform: translate(-200px);
 
     nav .menu{
         display: none;
-        
     }
     .search input{
       width : 34%
@@ -653,7 +661,14 @@ transform: translate(-200px);
   }
   @media only screen and (max-width: 600px) {
     
-
+    nav .menu ul li{
+        margin-left: 2.5rem;
+        
+    }
+    nav .menu ul li a{
+        
+        font-size: 1rem;
+    }
     .Reviews .gallery .box .img .text {
         color: black;
         display: flex;
@@ -689,13 +704,20 @@ transform: translate(-200px);
       width : 25%
     }
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 500px) {
 
     nav .signuplogin button {
         padding: .7rem .8rem;
         
     }
-
+    nav .menu ul li{
+        margin-left: 1.5rem;
+        
+    }
+    nav .menu ul li a{
+        
+        font-size: 1.1rem;
+    }
 
   }
 
