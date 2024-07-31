@@ -198,7 +198,7 @@ nav{
 .home .content .search{
     transform: translate(0,100px);
     opacity: 0;
-    z-index: -1;
+    
 }
 .traveldetails{
     text-align: center;
@@ -602,10 +602,11 @@ transform: translate(-200px);
         top: -1.5rem;
         width: 100vw;
         height: 100vh;
-        background: rgb(0 0 0/90%); 
+        background: rgb(0 0 0/100%); 
         display: flex; 
         align-items: center;
         padding: 0 3rem;
+        
               
 
     }
@@ -644,6 +645,7 @@ transform: translate(-200px);
 
     nav .menu{
         display: none;
+        
     }
     .search input{
       width : 34%
@@ -669,9 +671,11 @@ transform: translate(-200px);
     }
     .Reviews .gallery .box .userreview p{
         position: absolute;
-        left: -2rem;
-        width: 16.5rem;
-        top: 3rem;
+        left: -.5rem;
+        width: 10.5rem;
+        top: 2rem;
+        font-size: .55rem;
+        text-align: start;
     }
     .search button {
 
