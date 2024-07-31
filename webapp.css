@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Playwrite+HR:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto-bold {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+*{
+    font-family: "Roboto", sans-serif;    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .3s ease;
+    text-decoration: none;
+    
+    font-size: clamp(0.75rem, 0.6161rem + 0.4286vw, 0.9375rem);
+}
+
+:root{
+    --dark-green: #112a34;
+    --green-color: #004047;
+    --white-color : #fff;
+    --light-green: #02636e;
+}
+::selection{
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    
+}
+html{
+    font-size: 90%;
+}
+
+.home{
+    padding: 0.7rem ;
+    width:100%;
+    height: 100%;
+    color: #fff;
+    
+}
+.logo a{
+    font-family: "Playwrite HR", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #fff;
+}
+.homebox{
+    width:100%;
+    height: 100%;
+    border-radius: 1rem;
+    background: 
+    url(
+        https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D        );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding :0.5rem;
+}
+.logobars{
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+.close{
+    color: #fff;
+    display: none;
+}
+nav{
+    font-size: 15px;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(1px);
+    border-radius: 0.7rem;   
+    padding: 0 4rem;
+    background: linear-gradient(rgb(225,255,225,.2),rgb(225,255,225,.2));
+}
+
+.menu ul{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+
+}
+
+.menu{
+    display: block;
+    z-index: 1;
+}
+.menu ul li{
+   
+    
+    text-decoration: none;
+    margin-left: 3rem;
+    
+}
+.menu ul li a:hover{
+    transition: 0.5s;
+    color: var(--light-green);
+}
+.menu ul li a{
+    cursor: pointer;
+    color: #fff;
+    list-style-type: none;
+}
+.signuplogin button a{
+
+    color: #fff;
+}
+.signuplogin button{
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 0.7rem 2rem;
+    background-color: var(--green-color);
+    border: none;
+    border-radius: 1rem;
+}
+.signuplogin button:hover{
+    transition: 0.5s;
+    background-color: var(--light-green);
+}
+.search button{
+    color: #fff;
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 0.7rem 1rem;
+    background-color: var(--green-color);
+    border: none;
+    border-radius: 1rem;
+}
+.search button:hover{
+    transition: 0.5s;
+    background-color: var(--light-green);
+
+}
+.signuplogin span button{
+    background-color: transparent;
+}
+.content{
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    transform: translate(0,-65px);
+    
+    
+}
+.logo2{
+    font-family: "Playwrite HR", cursive;
+}
+.content h1{
+    font-size: clamp(3.5rem, 2.8182rem + 2.1818vw, 5rem);
+    line-height: rem;
+}
+.content p{
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+.search{
+
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-left: 30%;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+    background-color:#fff;
+}
+.search i{
+    color: rgb(0,0,0,5);
+}
+.search input{
+
+    color: black;
+    outline: none;
+    width: 70%;
+    text-align: start;
+    padding: .5rem 0rem;
+    background: transparent;
+    border: none;
+    margin-left: 0.5rem;
+    
+}
+
+.home .content .logo2,
+.home .content h1,
+.home .content p,
+.home .content .search{
+    transform: translate(0,100px);
+    opacity: 0;
+    z-index: -1;
+}
+.traveldetails{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5.5rem;
+}
+
+.box{
+    line-height: 1.5rem;
+    width: 23%;
+}
+.box i{
+    font-size: 8rem;
+    color: var(--green-color);
+}
+.box h1{
+    margin: 2rem 0rem;
+}
+.box p{
+    color: grey;
+}
+.box h1{
+    color: black;
+
+}
+
+.traveldetails .box
+
+{
+    transform: translate(0,100px);
+    opacity: 0;
+}
+.Destinations{
+    padding: 2rem;
+    width: 100%;
+    background-color: #02636e13;
+    
+    margin-top: 3rem;
+}
+.content2{
+    display: flex;
+    line-height: 2.4rem;
+    
+}
+.content2 .con1 h1{
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+.content2 .con1 p{
+    font-size: .8rem;
+}
+.con1{
+    width: 50%;
+    text-align: start;
+}
+.con2{
+    width: 50%;
+    text-align: start;
+}
+.con2 a{
+    font-weight: 700;
+    color: var(--dark-green);
+}
+.gallery {
+    width: 100%;
+    height: 80%;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.gallery .box {
+    background-position: center;
+
+    flex-grow: 1;
+    overflow: hidden;
+    border-radius: .9rem;
+    position: relative;
+    width: 30%;
+    height: 20%;
+    
+}
+.gallery .box img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: .8rem;
+    overflow: hidden;
+}
+.gallery .box .img .text {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: #fff;
+}
+.content3 .con3{
+    text-align: center;
+}
+.content3 .con3 h1{
+    font-size: 2.5rem;
+}
+
+.box .img .text a button{
+        color: #fff;
+        cursor: pointer;
+        margin-left: 1rem;
+        padding: 0.7rem 1rem;
+        background-color: var(--light-green);
+        border: none;
+        border-radius: 1rem;
+}
+.Destinations .content2 .con1 p,
+.Destinations .content2 .con1 h1,
+.Destinations .content2 .con2 p,
+.Destinations .content2 .con2 a{
+
+transform: translate(-200px);
+
+
+}
+.Destinations .gallery .box{
+    transform: translate(0,100px);
+    opacity: 0;
+}
+
+
+.features {
+    height: 100vh;
+}
+.features .gallery .box{
+    width: 40%;
+    height:50% ;
+    object-fit: cover;
+    
+}
+.features .gallery .box img:hover{
+    opacity: 0.7 ;
+    
+    
+}
+
+.features{
+    padding: 2rem;
+    width: 100%;
+}
+
+.Reviews{
+    padding: 2rem;
+    width: 100%;
+    background-color: #02636e13;
+    text-align: center;
+    
+    
+    
+}
+.con4 h1{
+    font-size: 3rem;
+
+}
+.con5 p{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: grey;
+}
+.Reviews .gallery .box .img .text {
+    color: black;
+    display: flex;
+    bottom: 12rem;
+    
+    
+    
+}
+.features .gallery .box{
+    transform: translate(0,100px);
+    opacity: 0;
+}
+.Reviews .gallery .box .img .text .user h2{
+    padding-top: 1rem;
+    padding-left: .5rem;
+
+}
+.Reviews .gallery .box .img .text img{
+    border-radius: 50%;
+    width:clamp(1rem, -0.3235rem + 4.7059vw, 3.5rem);
+    height:clamp(1rem, -0.3235rem + 4.7059vw, 3.5rem);
+    }
+    .Reviews .gallery .box .img{
+        position: relative;
+    }
+    .Reviews .gallery .box .userreview p{
+        position: absolute;
+        left: .01rem;
+        width: 18rem;
+        top: 5rem;
+    }
+   
+    .Reviews .content4 .con4 h1,
+    .Reviews .content4 .con5 p
+    {
+        transform: translate(0,100px);
+        opacity: 0;
+    }
+    .Reviews .gallery .box{
+        transform: translate(0,100px);
+        opacity: 0;
+    }
+    .confooter{
+        display: flex;
+        
+        border-radius: 1rem;
+        padding: 2rem;
+        width: 100%;
+        line-height:1.5rem ;
+    }
+    footer{
+        width: 100%;
+        padding: 2rem;
+    }
+    .conouter{
+        width: 100%;
+        border-radius: 1rem;
+        padding: 2rem;
+        align-items: center;
+        background-color: #004047;
+        color: #fff;
+        
+    }
+    
+    
+    .div1{
+        width: 40%;
+
+    }
+    .div1 .logo2{
+        margin-bottom: 1rem;
+        margin-top: 5rem;
+    }
+    .div1 h3 a{
+        color: black;
+        text-decoration: underline;
+    }
+    .div1 .icons a {
+        margin-left: .5rem;
+
+    }
+    .div1 .icons{
+        
+        margin-top: 1rem;
+    }
+    .div1 .icons a i{
+        
+        font-size: 1.3rem;
+    }
+    .div1 h2{
+        margin-top: 2rem;
+    }
+    .div2{
+        margin: clamp(0.5rem, -1.0882rem + 5.6471vw, 3.5rem);
+        line-height: 2.5rem;
+        font-size: 1.2rem;
+        
+    }
+    .div2 a h1 {
+        color: #fff;
+        text-decoration: none;
+    }
+    .div2 a p{
+       
+        text-decoration: underline;
+        color: rgb(196, 196, 196);
+        
+
+    }
+    .div2 a p span{
+        text-decoration: none;
+        background-color: var(--light-green);
+        border-radius: .5rem;
+        padding: .3rem;
+        color: #fff;
+        font-size: .8rem;
+    }
+    .div1 h3 a{
+        color: #fff;
+    }
+    .div1 .icons a i{
+        color: #fff;
+
+    }
+@media only screen and (max-width: 1300px) {
+    
+    .Reviews .gallery .box .img .text {
+        color: black;
+        display: flex;
+        bottom: 11rem;
+        
+        
+        
+    }
+    .signuplogin button{
+        margin-left: .4rem;
+    padding: 0.7rem 1rem;
+    }
+    .search input{
+      width : 63%
+      
+    }
+  
+    
+    }
+
+    @media only screen and (max-width: 1100px) {
+ 
+    .search input{
+      width : 58%
+    }
+    .Reviews .gallery .box .img .text {
+        color: black;
+        display: flex;
+        bottom: 9rem;
+        line-height: 1.2rem;
+        
+        
+        
+    }
+    .Reviews .gallery .box .userreview p{
+        position: absolute;
+        left: .01rem;
+        width: 18rem;
+        top: 3rem;
+    }
+  }
+@media only screen and (max-width: 1000px) {
+    .Reviews .gallery .box .img .text {
+        color: black;
+        display: flex;
+        bottom: 8.5rem;
+        
+        
+        
+    }.Reviews .gallery .box .userreview p{
+        position: absolute;
+        left: 0rem;
+        width: 16.5rem;
+        top: 3rem;
+    }
+    .search input{
+      width : 51%
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    
+    .traveldetails .box.box1{
+        margin-top: 3rem;
+    }
+    .Reviews .gallery .box .img .text {
+        color: black;
+        display: flex;
+        bottom: 7.5rem;
+        line-height: 1rem;
+        
+        
+        
+    }
+    .Reviews .gallery .box .userreview p{
+        position: absolute;
+        left: -2rem;
+        width: 16.5rem;
+        top: 3rem;
+    }
+    
+    
+    .box i{
+        font-size: 5rem;
+    }
+      .traveldetails {
+          margin-top: 0.5rem;
+          flex-direction: column;
+    }
+    .box{
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    nav .logo{
+        display: flex;
+        justify-content: center;
+    }
+    nav .menu.active{
+
+        display: block;
+        position: absolute;
+        left: -1.5rem;
+        top: -1.5rem;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(0 0 0/90%); 
+        display: flex; 
+        align-items: center;
+        padding: 0 3rem;
+              
+
+    }
+    nav .close{
+        display: block;
+        position: absolute;
+        left: 3rem;
+        top: 5rem;
+        
+    }
+    nav .close i{
+        font-size: x-large;
+        cursor: pointer;
+    }
+    nav .menu ul {
+        flex-direction: column;   
+        gap: 1rem;
+        
+    }
+    nav .menu ul li a{
+        
+        font-size: 1.3rem;
+    }
+    nav .menu ul:hover{
+        color: rgb(225 225 225/40% green, blue);
+
+    }
+    .logobars{
+        display: block;
+    }
+    .logobars i{
+        padding-right: 2rem;
+        
+        font-size: 1.5rem;
+    }
+
+    nav .menu{
+        display: none;
+    }
+    .search input{
+      width : 34%
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    
+
+    .Reviews .gallery .box .img .text {
+        color: black;
+        display: flex;
+        bottom: 5rem;
+        line-height: 1rem;
+        left: 0.5rem;
+        
+        
+        
+    }
+    .Reviews .gallery .box .img .text .user h2{
+        padding-top: .5rem;
+        padding-left: .5rem;
+    
+    }
+    .Reviews .gallery .box .userreview p{
+        position: absolute;
+        left: -2rem;
+        width: 16.5rem;
+        top: 3rem;
+    }
+    .search button {
+
+        padding: 0.5rem .5rem;
+
+    }
+    .homebox{
+        height: 95%;
+    }
+    .search input{
+      width : 25%
+    }
+  }
+  @media only screen and (max-width: 600px) {
+
+    nav .signuplogin button {
+        padding: .7rem .8rem;
+        
+    }
+
+
+  }
+
